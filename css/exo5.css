@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    color: orange;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+nav p {
+    float: left;
+    border: solid orange;
+    padding: 10px 20px;
+    margin: 20px 10px;
+}
+
+
+li {
+    display: inline-block;
+    border: solid orange;
+    margin: 20px -4px;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: orange;
+}
+
+li a {
+    display: block;
+    color: orange;
+    padding: 10px 40px;
+}
+
+li:first-of-type {border-right: none;}
+
+li:nth-of-type(2) {
+    border-left: none;
+    border-right: none;
+}
+
+li:nth-of-type(3) {
+    border-left: none;
+    border-right: none;
+}
+
+li:nth-of-type(4) {border-left: none;}
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+main p {
+    text-align: justify;
+}
+
+main a {
+    color: orange;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px;
+    color: #FFF;
+    position: relative;
+}
+
+h1::before {
+    content: '';
+    background-color: #FFF;
+    height: 5px;
+    width: 350px;
+    position: absolute;
+    top: 15px; left: -50px;
+    border-radius: 2px;
+}
+
+h1::after {
+    content: '';
+    background-color: #FFF;
+    height: 5px;
+    width: 350px;
+    position: absolute;
+    top: 15px; left: 755px;
+    border-radius: 2px;
+}
+
+article {
+    color: #FFF;
+}
+
+article p {
+    margin-bottom: 20px;
+}
+
+article div p {
+    margin-bottom: 20px;
+}
+
+.floatRight img {
+    max-width: 35%;
+    float: right;
+    border-radius: 30px;
+    margin: 0 0 10px 30px;
+    object-fit: cover;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin: 80px 0 40px 0;
+    color: #FFF;
+}
+
+.inline-blocks-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-blocks-container img {
+    width: 280px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+figcaption a {color: black;}
+
+figcaption {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+.inline-scnd-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-scnd-container div {
+    width: 48%;
+    height: 320px;
+    margin-bottom: 80px;
+}
+ 
+.inline-scnd-container img {
+    margin: 38px 0 0 0;
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+footer {
+    color: #FFF;
+    margin: 50px 0;
+    text-align: center;
+}
+
+footer a {
+    color: orange;
+}
